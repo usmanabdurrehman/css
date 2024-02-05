@@ -1,0 +1,41 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+input {
+  border-color: red;
+}
+
+form {
+  margin-bottom: 10px;
+}
+
+form input {
+  border-color: blue;
+}
+
+hr + input {
+  border-color: green;
+}
+
+.notice {
+  width: 90%;
+  border-radius: 1rem;
+  background-color: #007bff;
+  padding: 4px;
+  color: white;
+
+  & + & {
+    margin-top: 10px;
+  }
+
+  &.warning {
+    background-color: #ffc107;
+  }
+
+  &.success {
+    background-color: #28a745;
+  }
+}
